@@ -8,7 +8,12 @@
     - เมื่อ Algorithm นี้ทำงาน จะต้องเห็นผลลัพธ์ด้านล่าง
 */
 
-// Start coding here
+const addBonusForSelectedDepartment = (employeeInfo, bonus , department) => {
+  return employeeInfo
+            .filter((emp) => emp.department === department)
+            .map((emp) => bonus + emp.salary)
+            .reduce((sum , current) => sum + current , 0)
+};
 
 const employeeInfo = [
   {

@@ -7,6 +7,14 @@
 */
 
 // Start coding here
+const sumNegativeNumbers = (numbers) => {
+    return numbers
+      .filter((n) => n < 0)   // คัดเฉพาะตัวเลขติดลบ
+      .reduce((num1, num2) => num1 + num2, 0); // รวมค่าตัวเลขติดลบทั้งหมด
+  };
+  
+
+
 
 const numbers1 = [3, -5, 10, 12, -7, 0, 8, 2];
 console.log(sumNegativeNumbers(numbers1)); // -12
